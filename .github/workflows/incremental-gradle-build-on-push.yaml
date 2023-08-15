@@ -1,5 +1,4 @@
 name: Incremental Gradle Build
-on: [push]
 jobs:
   gradle_build:
     runs-on: macos-11
