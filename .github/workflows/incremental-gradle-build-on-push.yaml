@@ -13,5 +13,5 @@ jobs:
           distribution: 'temurin'
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments: assemble --debug
+          arguments: assemble --info
           build-root-directory: sample-mpp-lib
