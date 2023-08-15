@@ -11,6 +11,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      - uses: actions/cache@v3
+        with:
+          key: ${{ runner.os }}-kotlin-native-1.9.0
+          path:
+            ~/.konan
       - uses: gradle/gradle-build-action@v2
         with:
           arguments: assemble --info
