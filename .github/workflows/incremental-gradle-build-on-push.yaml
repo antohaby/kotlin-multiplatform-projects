@@ -18,5 +18,5 @@ jobs:
             ~/.konan
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments: assemble --info
+          arguments: assembly
           build-root-directory: sample-mpp-lib
