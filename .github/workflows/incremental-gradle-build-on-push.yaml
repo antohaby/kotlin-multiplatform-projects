@@ -18,5 +18,9 @@ jobs:
             ~/.konan
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments: commonizeNativeDistribution --scan
+          arguments: cleanNativeDistributionCommonization
+          build-root-directory: sample-mpp-lib
+      - uses: gradle/gradle-build-action@v2
+        with:
+          arguments: commonizeNativeDistribution
           build-root-directory: sample-mpp-lib
